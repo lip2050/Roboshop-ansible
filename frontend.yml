@@ -23,7 +23,7 @@
         dest: /usr/share/nginx/html
         remote_src: yes
 
-    - namee: Copy roboshop configuration
+    - name: Copy roboshop configuration
       ansible.builtin.copy:
         src: roboshop.conf
         dest: /etc/nginx/default.d/roboshop.conf
