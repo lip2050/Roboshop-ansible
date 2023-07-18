@@ -7,7 +7,7 @@
   ansible.builtin.import_tasks:
     file: app_presetup.yml
 
-- name: Download Maven Dependencies
+- name: Download Golang Dependencies
   ansible.builtin.shell: go mod init dispatch ; go get ; go build
   args:
     chdir: /app
